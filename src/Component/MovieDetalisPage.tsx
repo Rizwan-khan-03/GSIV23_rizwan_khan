@@ -1,7 +1,7 @@
-import React from 'react';
+import React ,{useState}from 'react'
 import './style.css';
 import dummy from './dummy.png'
-
+import { useDispatch, useSelector } from 'react-redux';
 const movieData = {
     title: 'Movie Title',
     rating: 8.5,
@@ -10,6 +10,8 @@ const movieData = {
   };
 
 const MovieDetailsPage: React.FC = () => {
+  const moviesListFromStore = useSelector((state:any) => state?.MoviesReducer?.movies)
+  const [movie, setMovie] = useState<any>({})
   return (
     <div className="movie-detals-card">
       <div className="movie-img">
