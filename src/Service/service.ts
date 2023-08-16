@@ -7,9 +7,7 @@ export const clearStorage = (key = "") => localStorage.clear()
 
 export const getAllMoviesList = async () => {
   try {
-    const response = await getRequest();
-    console.log('response',response);
-    
+    const response = await getRequest();    
     if (response) {
       return response;
     } else {

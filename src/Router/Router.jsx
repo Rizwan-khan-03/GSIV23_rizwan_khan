@@ -5,8 +5,7 @@ import MoviesListPage from "../Component/MoviesListPage";
 
 function Router() {
     return (
-        <div className="anvContainer">
-            <Header />
+        <div className="root-container">
             <Routes>
                 <Route path='/'>
                     <Route index element={<MoviesListPage />} />
