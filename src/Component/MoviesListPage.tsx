@@ -15,7 +15,6 @@ function MovieDetails() {
   useEffect(() => {
     dispatch(action.getMoviesRequest());
     setFilteredMovies(moviesListFromStore);
-    console.log('moviesListFromStore',moviesListFromStore[0]);
     
   }, []);
   useEffect(() => {
