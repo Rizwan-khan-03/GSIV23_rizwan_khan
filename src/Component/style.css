@@ -1,5 +1,4 @@
 .movie-card {
-    /* display: flex; */
     border: 1px solid #ccc;
     border-radius: 15px;
     overflow: hidden;
@@ -81,4 +80,37 @@
   -webkit-line-clamp: 2; 
   -webkit-box-orient: vertical; 
   text-overflow: ellipsis;
+}
+.header-class {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  background-color: gray; 
+  border-radius: 5px;
+  padding: 5px;
+  margin-right: 10px;
+}
+
+.search i {
+  margin-right: 5px;
+  color: white;
+}
+
+.search input {
+  border: none;
+  outline: none;
+  background-color: transparent; 
+  color: white; 
+}
+
+.home-icon i {
+  color: gray;
+}
+.search input::placeholder {
+  color: white; 
 }

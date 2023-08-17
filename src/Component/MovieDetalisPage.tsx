@@ -3,7 +3,7 @@ import './style.css';
 import dummy from './dummy.png'
 import { useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
-import Header from './Header';
+import { Link } from 'react-router-dom';
 
 const MovieDetailsPage: React.FC = () => {
   const [movie, setMovie] = useState<any>({})
@@ -26,7 +26,9 @@ const MovieDetailsPage: React.FC = () => {
           {"Movie Details"}
         </div>
         <div className='home-icon'>
-          <i className="material-icons">home</i>
+          <Link to={'/'}>
+            <i className="material-icons">home</i>
+          </Link>
         </div>
       </div>
       <div className="movie-detals-card">
